@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudVision", "CloudVision\CloudVision.csproj", "{E84DC31C-0912-4F14-A389-7E559B1FBB5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCropping", "ImageCropping\ImageCropping.csproj", "{E70F21DC-B1F1-4D96-9952-E02A675BED44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E84DC31C-0912-4F14-A389-7E559B1FBB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84DC31C-0912-4F14-A389-7E559B1FBB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84DC31C-0912-4F14-A389-7E559B1FBB5B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E84DC31C-0912-4F14-A389-7E559B1FBB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84DC31C-0912-4F14-A389-7E559B1FBB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84DC31C-0912-4F14-A389-7E559B1FBB5B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E70F21DC-B1F1-4D96-9952-E02A675BED44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70F21DC-B1F1-4D96-9952-E02A675BED44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70F21DC-B1F1-4D96-9952-E02A675BED44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70F21DC-B1F1-4D96-9952-E02A675BED44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1EF7234-E1A0-41EA-B4B9-A08CF3812603}
+	EndGlobalSection
+EndGlobal

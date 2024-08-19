@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"              
+              xmlns:skia="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
+             
+             x:Class="CloudVision.MainPage">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Venstre kolonne -->
+            <StackLayout Grid.Column="0" Padding="10" Spacing="10">
+                <AbsoluteLayout HeightRequest="300" VerticalOptions="CenterAndExpand">
+                <Image x:Name="SelectedImage" Aspect="AspectFit" HeightRequest="300" VerticalOptions="CenterAndExpand" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+                <skia:SKCanvasView x:Name="CanvasView" PaintSurface="OnCanvasViewPaintSurface" BackgroundColor="LightGray" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" />
+            </AbsoluteLayout>
+                
+            <Button Text="Vælg billede" Clicked="OnSelectImageButtonClicked"/>
+                <Button Text="Analyser" Clicked="OnAnalyzeButtonClicked"/>
+                <Button Text="Genkend tekst" Clicked="OnTextButtonClicked"/>
+                <Button Text="Find vartegn" Clicked="OnLandmarkButtonClicked"/>
+        </StackLayout>
+
+            <!-- Højre kolonne -->
+            <StackLayout Grid.Column="1" Padding="10" Spacing="10">
+                <Label Text="Analyse" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                <ScrollView>
+                    <Label x:Name="AnalysisText" Text="Resultatet af analysen vil blive vist her." TextType="Html" />
+                </ScrollView>
+            </StackLayout>
+        </Grid>
+
+</ContentPage>
